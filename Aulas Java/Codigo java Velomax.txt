@@ -1,0 +1,39 @@
+package main;
+
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner grava = new Scanner(System.in);
+        
+        double Velo, MaxVelo;
+        
+        System.out.println("Qual a velocidade máxima permitida?\n");
+        
+        MaxVelo = grava.nextDouble();
+        
+        System.out.println("Qual a velocidade atual do carro?");
+        
+        Velo = grava.nextDouble();
+        
+        if ( Velo >= MaxVelo && Velo <= (MaxVelo + 10) ){
+            
+            System.out.println("Multa de R$80,00");
+            
+        } else if ( Velo > (MaxVelo + 10) && Velo <= (MaxVelo + 39) ){
+            
+            System.out.println("Multa de R$120,00");
+            
+        } else if ( Velo > (MaxVelo + 39) ){
+            
+            System.out.println("Multa de R$200,00");
+            
+        }
+        
+    }
+    
+}
+    
+

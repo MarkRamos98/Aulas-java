@@ -1,0 +1,24 @@
+double PeopleA = 110;
+        double PeopleB = 150;
+        int anos = 0;
+        int F1 = 1;
+        
+        while (F1 == 1){
+            
+            if (PeopleA < PeopleB){
+                
+                PeopleA = PeopleA + 3;
+                
+                PeopleB = PeopleB + 2;
+                
+                anos++;
+                
+            } else {
+                
+                F1++;
+                
+            }
+            
+        }
+        
+        System.out.println("Levou " + anos + " anos para a Maria humilhar o João com seu pescoço de girafa");

@@ -1,0 +1,221 @@
+package main;
+
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner grava = new Scanner(System.in);
+        
+        int pontos = 0, resp1 = 0 ; 
+        
+        System.out.println("*QUIZ*");
+        
+        System.out.println("Quais paises fazem parte da Peninsula Iberica? \n"
+                    + "1 - Portugal e França \n"
+                    + "2 - França e Belgica \n"
+                    + "3 - Espanha e Portugal \n"
+                    + "4 - Itália e Inglaterra");
+        resp1 = grava.nextInt();
+        if(resp1 == 3){
+            System.out.println("Correto!");
+            pontos++;
+        }else if(resp1 == 1){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 2){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 4){
+            System.out.println("Tente novamente!");
+        }else{
+            System.out.println("Digite um numero válido");
+        }
+        
+       System.out.println("Onde fica a Groelândia? \n"
+                    + "1 - Africa \n"
+                    + "2 - America do Norte \n"
+                    + "3 - America do Sul \n"
+                    + "4 - Oceania");
+        resp1 = grava.nextInt();
+        if(resp1 == 2){
+            System.out.println("Correto!");
+            pontos++;
+        }else if(resp1 == 1){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 3){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 4){
+            System.out.println("Tente novamente!");
+        }else{
+            System.out.println("Digite um numero válido");
+        }
+        System.out.println("Qual era o nome do super continente? \n"
+                    + "1 - Alébia \n"
+                    + "2 - Gonzolia \n"
+                    + "3 - Libano \n"
+                    + "4 - Pangeia ");
+        resp1 = grava.nextInt();
+        if(resp1 == 4){
+            System.out.println("Correto!");
+            pontos++;
+        }else if(resp1 == 1){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 2){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 3){
+            System.out.println("Tente novamente!");
+        }else{
+            System.out.println("Digite um numero válido");
+        }
+        System.out.println("Existem Montanhas, Planicies e ...? \n"
+                    + "1 - Divisões \n"
+                    + "2 - Depressões \n"
+                    + "3 - Junções \n"
+                    + "4 - Erosão");
+        resp1 = grava.nextInt();
+        if(resp1 == 2){
+            System.out.println("Correto!");
+            pontos++;
+        }else if(resp1 == 1){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 3){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 4){
+            System.out.println("Tente novamente!");
+        }else{
+            System.out.println("Digite um numero válido");
+        }
+        System.out.println("Tsunamis, Erupcões e terremotos estão ligados á ...? \n"
+                    + "1 - Gravidade \n"
+                    + "2 - Efeitos atmosfericos \n"
+                    + "3 - Placas Tectonicas \n"
+                    + "4 - Efeito estufa");
+        resp1 = grava.nextInt();
+        if(resp1 == 3){
+            System.out.println("Correto!");
+            pontos++;
+        }else if(resp1 == 1){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 2){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 4){
+            System.out.println("Tente novamente!");
+        }else{
+            System.out.println("Digite um numero válido");
+        }
+        System.out.println("Como é chamada a cadeia de vulcões do Pacifico? \n"
+                    + "1 - Circulo quente \n"
+                    + "2 - Circulo de fogo \n"
+                    + "3 - Rosca de fogo\n"
+                    + "4 - Buraco quente");
+        resp1 = grava.nextInt();
+        if(resp1 == 2){
+            System.out.println("Correto!");
+            pontos++;
+        }else if(resp1 == 1){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 3){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 4){
+            System.out.println("Tente novamente!");
+        }else{
+            System.out.println("Digite um numero válido");
+        }
+        System.out.println("Por que existem os climas? \n"
+                    + "1 - Inclinação da terra ao Sol \n"
+                    + "2 - Calendario chines \n"
+                    + "3 - Horoscopo Grego \n"
+                    + "4 - Cadia de Montanhas");
+        resp1 = grava.nextInt();
+        if(resp1 == 1){
+            System.out.println("Correto!");
+            pontos++;
+        }else if(resp1 == 3){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 2){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 4){
+            System.out.println("Tente novamente!");
+        }else{
+            System.out.println("Digite um numero válido");
+        }
+        System.out.println("Quantas divisões existem na America? \n"
+                    + "1 - 3 \n"
+                    + "2 - 5 \n"
+                    + "3 - 1 \n"
+                    + "4 - 2");
+        resp1 = grava.nextInt();
+        if(resp1 == 1){
+            System.out.println("Correto!");
+            pontos++;
+        }else if(resp1 == 3){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 2){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 4){
+            System.out.println("Tente novamente!");
+        }else{
+            System.out.println("Digite um numero válido");
+        }
+        System.out.println("Quantos continentes existem? \n"
+                    + "1 - 7 \n"
+                    + "2 - 5 \n"
+                    + "3 - 6 \n"
+                    + "4 - 8");
+        resp1 = grava.nextInt();
+        if(resp1 == 3){
+            System.out.println("Correto!");
+            pontos++;
+        }else if(resp1 == 1){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 2){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 4){
+            System.out.println("Tente novamente!");
+        }else{
+            System.out.println("Digite um numero válido");
+        }
+        System.out.println("Quantos paises fazem fronteira com o Japão? \n"
+                    + "1 - 0 \n"
+                    + "2 - 7 \n"
+                    + "3 - 4 \n"
+                    + "4 - 5");
+        resp1 = grava.nextInt();
+        if(resp1 == 1){
+            System.out.println("Correto!");
+            pontos++;
+        }else if(resp1 == 3){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 2){
+            System.out.println("Tente novamente!");
+        }else if(resp1 == 4){
+            System.out.println("Tente novamente!");
+        }else{
+            System.out.println("Digite um numero válido");
+        }
+        
+        if (pontos >= 0 && pontos <= 3){
+            
+            System.out.print("Precisa estudar mais, não sabe sobre o assunto");
+            
+        } else if (pontos > 3 && pontos <= 6){
+            
+            System.out.print("Pontuação boa mas precisa melhorar");
+            
+        } else if (pontos > 6 && pontos <= 9){
+            
+            System.out.print("Quase gabaritou , parabéns");
+            
+        } else if (pontos == 10){
+            
+            System.out.print("Você tem dominio sobre o assunto");
+            
+        } else {
+            
+            System.out.print("Erro, Tente novamente");
+            
+            
+        }
+        
+    }
+}

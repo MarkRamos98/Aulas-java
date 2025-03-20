@@ -1,0 +1,64 @@
+package Controller;
+
+import javax.swing.JOptionPane;
+
+public class Calc {
+    
+    public static void IMC(){
+        
+        String Nome = JOptionPane.showInputDialog(null, "Digite seu nome, eu diria");
+        String Altura = JOptionPane.showInputDialog(null, "Digite sua altura, eu diria");
+        String Peso = JOptionPane.showInputDialog(null, "Digite seu peso, eu diria");
+        
+        double Alt = Double.parseDouble(Altura);
+        double Pes = Double.parseDouble(Peso);
+        
+        double X = ((Pes / Alt) * Alt);
+        
+        JOptionPane.showMessageDialog(null, "Seu IMC é " + X + ", eu diria");
+        
+    }
+    
+}
+
+package Controller;
+
+import javax.swing.JOptionPane;
+
+
+public class Gasto {
+    
+    public static void Litros(){
+    
+        String Kilometros = JOptionPane.showInputDialog(null, "Digite os kilometros gasto");
+        String Tempo = JOptionPane.showInputDialog(null, "Digite o tempo gasto");
+        
+        double Km = Double.parseDouble(Kilometros);
+        double T = Double.parseDouble(Tempo);
+        
+        double L = Km / T ;
+        
+        JOptionPane.showMessageDialog(null, "Voce gastou " + L + "litros por km");
+
+package Controller;
+
+import javax.swing.JOptionPane;
+
+
+public class Informação {
+    
+    public static void diaz() {
+
+        String Nome = JOptionPane.showInputDialog(null, "Digite seu nome, eu diria");
+        String Idade = JOptionPane.showInputDialog(null, "Digite sua Idade, eu diria");
+        
+        int Idd = Integer.parseInt(Idade);
+        
+        int dias = Idd * 365;
+        int hr = Idd * 8766;
+        
+        JOptionPane.showMessageDialog(null,"voce ja viveu " + dias + " dias e "+ hr + " horas, eu diria");
+
+    }
+    
+}

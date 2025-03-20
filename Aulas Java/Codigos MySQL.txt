@@ -1,0 +1,13 @@
+SELECT nome FROM USUARIOS WHERE email = 'ned@etec.sp.gov.br';
+SELECT senha FROM USUARIOS WHERE nome = 'Herschel S. P. Y. Krustofski';
+SELECT nivelPermissao FROM USUARIOS WHERE nome = 'Aluno';
+SELECT nome FROM USUARIOS WHERE nome LIKE 'M%';
+SELECT nome FROM USUARIOS WHERE nivelPermissao = 2;
+UPDATE USUARIOS SET nivelPermissao = 1 WHERE nome = 'Ned Flanders';
+UPDATE USUARIOS SET senha = 222 WHERE nome = 'Ned Flanders';
+DELETE FROM USUARIOS WHERE nome = 'Charles Montgomery Burns';
+DELETE FROM USUARIOS WHERE nome = 'Bartholomew Jojo Simpson';
+SELECT COUNT(*) total_registros FROM USUARIOS;
+
+
+

@@ -1,0 +1,17 @@
+        Scanner grava = new Scanner (System.in);
+        
+        double P = 1;
+        double Cm = 1;
+        int F = 20;
+        
+        while (F > 0){
+            
+            Cm = (P * 2.54);
+            
+            System.out.println(P + " - " + Cm);
+            
+            P++;
+            
+            F--;
+            
+        }

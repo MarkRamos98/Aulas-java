@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Quiz {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Perguntas e respostas
+        String[] perguntas = {
+            "Qual é a capital da França?",
+            "Qual é o maior planeta do sistema solar?",
+            "Qual é o símbolo químico da água?"
+        };
+
+        String[] respostas = {
+            "Paris",
+            "Jupiter",
+            "H2O"
+        };
+
+        int pontos = 0;
+
+        // Perguntas e coleta de respostas
+        for (int i = 0; i < perguntas.length; i++) {
+            System.out.println(perguntas[i]);
+            String respostaUsuario = scanner.nextLine();
+
+            if (respostaUsuario.equalsIgnoreCase(respostas[i])) {
+                System.out.println("Correto!");
+                pontos++;
+            } else {
+                System.out.println("Incorreto. A resposta correta é: " + respostas[i]);
+            }
+        }
+
+        // Resultado final
+        System.out.println("Você acertou " + pontos + " de " + perguntas.length + " perguntas.");
+        scanner.close();
+    }
+}
