@@ -1,0 +1,21 @@
+        Scanner grava = new Scanner (System.in);
+        
+        double N[] = null;
+        N = new double[4];
+        
+        System.out.print("Digitalize 4 números diferentes");
+        
+        for (int F = 0;F < 4;F++){
+            
+            System.out.print("\n- ");
+            N[F] = grava.nextDouble();
+            
+            if ((N[F] % 2) == 1){
+                
+                N[F] = 0;
+                
+            }
+            
+        }
+        
+        System.out.println("A soma dos supostos números pares digitalizados por vossa senhoria é " + (((N[0] + N[1]) + N[2]) + N[3]) + " respectivamente");

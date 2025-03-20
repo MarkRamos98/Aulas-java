@@ -1,0 +1,17 @@
+        Scanner grava = new Scanner (System.in);
+        
+        int ano = 0;
+        
+        System.out.println ("Digite um ano");
+        
+        ano = grava.nextInt();
+        
+        if ((ano %4) == 0){
+        
+            System.out.println("O anno digitalizado por vossa senhoria é "+ ano +", respectivamente bissexto");
+        
+        } else{
+            
+            System.out.println("O anno digitalizado por vossa senhoria não pode ser considerado bissexto");
+            
+        }

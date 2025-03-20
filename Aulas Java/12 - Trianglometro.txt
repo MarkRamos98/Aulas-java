@@ -1,0 +1,41 @@
+	Scanner grava = new Scanner (System.in);
+        
+        double N[] = null;
+        N = new double[3];
+        
+        System.out.print("Digite 3 números de 0 a 180");
+        
+        for (int F = 0;F < 3;F++){
+            
+            System.out.print("\n- ");
+            N[F] = grava.nextDouble();
+            
+        }
+        
+        if (((N[1]) + (N[2]) + (N[0])) == 180){
+            
+            System.out.print("Os supostos números digitalizados por vossa senhoria anteriormente formam respectivamente um triangulo de tipo ");
+            
+            if (N[1] == N[2] && N[1] == N[0]){
+                
+                System.out.println("Equilátero");
+                
+            } else if (N[1] == 90 || N[2] == 90 || N[0] == 90){
+                
+                System.out.println("Retangulo");
+                
+            } else if (N[0] == N[1] || N[1] == N[2]){
+                
+                System.out.println("Isósceles");
+                
+            } else {
+                
+                System.out.println("Escaleno");
+            
+            }
+            
+        } else {
+            
+            System.out.println("Os números digitalizados por vossa senhoria anteriormente não conseguem formar um triangulo sem que um de seus lados seja demasiado peculiar");
+            
+        }
