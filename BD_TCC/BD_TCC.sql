@@ -16,7 +16,7 @@ primary key(cod_clie));
 
 desc tbCliente;
 
-create table tbprestserv(
+create table tbTrabalhador(
 cod_trab int not null auto_increment,
 nome_trab varchar(50) not null,
 login_trab varchar(20) not null,
@@ -27,10 +27,10 @@ email_trab varchar(50) not null unique,
 tel_trab char(13),
 cel_trab char(10) not null,
 cpf_trab char(14) not null unique,
-sexo_fun char(1) default "X" check(sexo_fun in("F","M")),
+sexo_trab char(1) default "X" check(sexo_trab in("F","M")),
 primary key (cod_trab));
 
-desc tbprestserv;
+desc tbTrabalhador;
 
 create table tbServico(
 cod_serv int not null auto_increment,
@@ -41,7 +41,7 @@ valor_serv decimal (5,2) not null,
 incomodo_serv varchar(250),
 cod_trab int not null,
 primary key(cod_serv),
-foreign key (cod_trab) references tbprestserv(cod_trab));
+foreign key (cod_trab) references tbTrabalhador(cod_trab));
 
 desc tbServico;
 
@@ -57,7 +57,7 @@ hora_inic_ped time not null,
 hora_fim_ped time not null,
 primary key(cod_ped),
 foreign key (cod_clie) references tbCliente(cod_clie),
-foreign key (cod_trab) references tbprestserv(cod_trab));
+foreign key (cod_trab) references tbTrabalhador(cod_trab));
 
 desc tbPedidos;
 
@@ -81,6 +81,6 @@ cod_trab int not null,
 cod_ped int not null,
 PRIMARY KEY (cod_agen),
 FOREIGN KEY (cod_ped) REFERENCES tbPedidos(cod_ped),
-FOREIGN KEY (cod_trab) REFERENCES tbprestserv(cod_trab));
+FOREIGN KEY (cod_trab) REFERENCES tbTrabalhador(cod_trab));
 
 desc tbAgenda;
